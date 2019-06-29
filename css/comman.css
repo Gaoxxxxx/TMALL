@@ -1,0 +1,6 @@
+/* style in here */
+/* 公共样式用来居中 */
+.wrapper{
+    width: 1230px;
+    margin: 0 auto;
+}
