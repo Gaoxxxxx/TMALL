@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="css\iconfont.css">
     <!-- 先引入公共样式表 -->
     <link rel="stylesheet" href="css\comman.css">
+    <!-- 再引入私有样式表 -->
     <link rel="stylesheet" href="css\index.css">
     <title>Document</title>
 </head>
 <body>
     <div id="header">
+        <!-- 宽1230 居中 -->
         <div class="wrapper">
             <div class="header-login">
-                <p>
-                    
-                </p>
+                <div class="login-info">
+                    <span>喵，欢迎来天猫</span>
+                    <a href="#">请登录</a>
+                    <a href="#">免费注册</a>
+                </div>
             </div>
-            <div class="header-menu"></div>
+            <div>
+                <ul class="header-menu">
+                    <li class="list-tb"><a href="#">我的淘宝</a><span></span>
+                        <ul class="list-tb-sub">
+                            <li><a href="#">已买到的宝贝</a></li>
+                            <li><a href="#">已卖出的宝贝</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-crat"><i class="iconfont icon-mini-cart icon"></i><a href="#">购物车(0)件</a></li>
+                    <li class="list-collect"><a href="#">收藏夹</a><span></span>
+                        <ul class="list-collect-sub">
+                            <li><a href="#">收藏的宝贝</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </li>
+                    <li class="separaed"></li>
+                    <li class="list-phone"><i class="iconfont icon-shouji icon"></i><a href="#">手机版</a></li>
+                    <li class="list-web"><a href="#">淘宝网</a></li>
+                    <li class="list-support"><a href="#">商家支持</a><span></span>
+                        
+                    </li>
+                    <li class="list-guide"><i class="iconfont icon-list icon"></i><a href="#">网站导航</a><span></span></li>                    
+                </ul>           
+            </div>
         </div>
     </div>
 </body>

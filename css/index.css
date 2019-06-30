@@ -1,5 +1,161 @@
 /* style in here */
-#header{
+
+#header {
+    width: auto;
     height: 32px;
     background: #a9180a;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
 }
+
+.login-info {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.header-menu>li {
+    color: #fff;
+    display: inline-block;
+}
+
+.login-info>a,
+.login-info>span {
+    color: #fff;
+    padding: 0 10px;
+}
+
+.header-menu a,
+.header-menu span {
+    color: #fff;
+}
+
+.header-menu {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    float: right;
+}
+
+.header-menu>li {
+    float: left;
+}
+
+.header-menu .separaed {
+    position: relative;
+    top: 9px;
+    width: 1px;
+    height: 14px;
+    line-height: 14px;
+    margin: 0 2px 0 5px;
+    border-right: 1px solid #ccc;
+
+}
+
+.header-menu span {
+    margin-left: 2px;
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    /* transparent 设置透明色 */
+    border-top-color: #bbb;
+    font-size: 0;
+    line-height: 0;
+    transition: transform 0.5s;
+}
+
+.list-tb {
+    padding: 0 14px 0 10px;
+    position: relative;
+}
+
+.list-tb-sub,
+.list-collect-sub {
+    position: absolute;
+    left: 0px;
+    top: 32px;
+    background: #fff;
+    padding: 8px 0px 8px 0px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    width: 82px;
+    line-height: 20px;
+    text-align: center;
+}
+.list-collect-sub{
+    width: 70px;
+}
+
+.list-tb-sub a,
+.list-collect-sub a {
+    padding: 0;
+    display: block;
+    line-height: 20px;
+    color: #666;
+
+}
+
+.list-tb:hover .list-tb-sub,
+.list-collect:hover .list-collect-sub {
+    display: block;
+}
+
+.list-tb:hover,
+.list-collect:hover {
+    background: #ffffff;
+}
+
+.list-tb:hover>a,
+.list-tb-sub a:hover,
+.list-collect:hover>a,
+.list-collect-sub a:hover {
+    color: #ff0036;
+    text-decoration: underline;
+}
+
+.list-tb:hover span,
+.list-collect:hover span {
+    transform: translateY(-3px) rotate(180deg);
+}
+
+.list-crat {
+    padding: 0 10px;
+}
+
+.icon {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.list-collect {
+    position: relative;
+    padding: 0 14px 0 10px;
+}
+
+.list-phone {
+    padding: 0 10px;
+}
+
+.list-web {
+    padding: 0 10px;
+}
+
+.list-support {
+    padding: 0 14px 0 10px;
+}
+
+.list-guide {
+    padding: 0 14px 0 10px;
+}
+
+
+
+
+
+
+
+
