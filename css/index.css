@@ -158,7 +158,7 @@
 }
 
 .list-support-sub {
-    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
     color: #999;
     position: absolute;
     right: 0px;
@@ -194,70 +194,77 @@ h3 {
     color: #999;
 }
 
-.list-support-sub a:hover{
+.list-support-sub a:hover {
     color: #ff0036;
-    text-decoration: underline;  
+    text-decoration: underline;
 }
-.list-guide:hover .list-guid-menu{
-display: block;
+
+.list-guide:hover .list-guid-menu {
+    display: block;
 }
-.list-guid-menu{
+
+.list-guid-menu {
+    border: 1px solid #ccc;
+    border-top: none;
     z-index: 5;
     position: absolute;
     right: 0px;
-    top: 32px;
-    width: 1200px;
+    top: 33px;
+    width: 1198px;
     height: 111px;
     background-color: #fff;
-    line-height: 26px;
+    line-height: 1.4;
     padding: 25px 0;
     display: none;
     overflow: hidden;
 
 }
-h2{
-    width: 455px;
-    margin-top: 10px;
+
+h2 {
+    padding-bottom: 8px;
     font-size: 16px;
-    color:#f56a00;
+    color: #f56a00;
 }
-.guid-menu-hot{
-    padding-right:0;
-    padding-left:30px;
-    overflow: hidden;
-    float: left;
-}
-.hot-list ,.marker-list{
-    padding-left:0;  
+
+
+.guid-menu-hot {
+    padding-left: 30px;
     width: 455px;
-}
-.guid-menu-hot li,.guid-menu-market li,.help-list li{
-    width: 91px;
     float: left;
-    padding: 6px 0 6px 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: -webkit-match-parent;
-    line-height: 1.4;
 }
-.guid-menu-hot a,.guid-menu-market a,.guid-menu-help a{
-    color:#666;
-}
-.guid-menu-market{
+
+.guid-menu-market {
+    padding-left: 30px;
+    width: 455px;
     float: left;
-    padding-left:30px;
-    overflow: hidden;
     border-left: 1px solid #f5f5f5;
     border-right: 1px solid #f5f5f5;
 }
-.guid-menu-help{
-    padding-left:30px;
-    padding-right: 0px;
-    color:#666;
+
+.guid-menu-help {
+    padding-left: 30px;
+    width: 196px;
+    color: #666;
     float: left;
-    width: 198px;
 }
+
+.hot-list li,
+.market-list li,
+.help-list li {
+    display: block;
+    float: left;
+    line-height: 1.4;
+    padding: 6px 0;
+    width: 91px;
+}
+
+.guid-menu-hot a,
+.guid-menu-market a,
+.guid-menu-help a {
+    color: #666;
+}
+
+
 /* 搜索栏开始 */
 #header-search {
     height: 130px;
@@ -280,19 +287,14 @@ h2{
 }
 
 .search-bar {
-    position: relative;
-    /* float: left; */
-    overflow: hidden;
     margin-top: 38px;
     height: 36px;
     border: #ff0036 solid 2px;
 }
 
 .search-content {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 491px;
+    float: left;
+    width: 481px;
     height: 36px;
     padding-left: 10px;
     border: none;
@@ -300,15 +302,13 @@ h2{
 }
 
 .search-btn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 132px;
+    float: left;
+    width: 130px;
     height: 36px;
     background: #ff0036;
     font-size: 18px;
     font-weight: 700;
-    border: none;   
+    border: none;
     color: #fff;
     outline: none;
     letter-spacing: 5px;
@@ -345,13 +345,9 @@ h2{
 
 /* nav 开始  */
 .nav {
-    position: relative;
-    left: -40px;
+    margin-left: 200px;
 }
 
-.main-nav{
-    width: 1230px;
-}
 .nav li {
     float: left;
 }
@@ -370,4 +366,20 @@ h2{
     height: 35px;
     line-height: 35px;
     padding: 0 8px;
+}
+
+.nav a:hover {
+    color: #ff0036;
+
+}
+
+/* nav结束 */
+/* banner开始 */
+.banner {
+    height: 500px;
+    background-color: #333;
+}
+
+.banner-img {
+    background: url();
 }
