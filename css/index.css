@@ -429,14 +429,14 @@ h2 {
     color: #fff;
 }
 
-.category .category-detail li a {
+.category .category-detail li .con-color {
 
     color: #fff;
 }
 
 .category .category-detail li i {
-
     margin: 0 4px 0 14px;
+    color: rgba(225, 225, 225, 0.8)
 }
 
 .category .category-detail li:nth-child(1):hover .category-content {
@@ -448,7 +448,8 @@ h2 {
     background-color: #fff;
 }
 
-.category .category-detail li:nth-child(1):hover a {
+.category .category-detail li:nth-child(1):hover .con-color,
+.category .category-detail li:nth-child(1):hover i {
     color: #e54077;
 }
 
@@ -461,7 +462,8 @@ h2 {
     background-color: #fff;
 }
 
-.category .category-detail li:nth-child(2):hover a {
+.category .category-detail li:nth-child(2):hover .con-color,
+.category .category-detail li:nth-child(2):hover i {
     color: #427def;
 }
 
@@ -506,10 +508,15 @@ h2 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+
+}
+
+.hot-word-line .line-con-con a {
+    color: #000;
 }
 
 .hot-word-con .hot-word-line .sperate {
-    border-bottom: 1px dashed rgba(0 ,0 ,0, 0.1);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
     height: 10.5px;
     margin-bottom: 10.5px;
 }
@@ -517,7 +524,9 @@ h2 {
 .hot-word-con .hot-word-line a {
     display: inline-block;
     margin-left: 13px;
+
 }
+
 .category-content .hot-logo-con {
     display: flex;
     justify-content: space-between;
@@ -525,45 +534,57 @@ h2 {
     width: 189px;
     padding: 10px;
     float: left;
-   
+
 }
-.category-content .hot-logo-con .hot-logo-con-img{
+
+.category-content .hot-logo-con .hot-logo-con-img {
     display: block;
     padding: 5px 10px;
     margin-right: 1px;
     margin-bottom: 1px;
-    width: 73px;
+    width: 73.5px;
     height: 37px;
     background-color: #fff;
 }
-.category-content .hot-logo-con .hot-logo-con-img img{
-width: 73px;
+
+.category-content .hot-logo-con .hot-logo-con-img img {
+    width: 73px;
 }
+
+.hot-word-con .hot-word-line .line-con-con .con-highlight {
+    color: #e54077;
+}
+
 /* banner开始 */
 .banner {
+
     height: 500px;
-    background-color: #eee;
+    background-color: #e8e8e8;
 }
 
 .banner .wrapper {
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
+    height: 500px;
 }
 
-/* .banner .wrapper img {
-   display: block;
-} */
+.banner .wrapper img {
+    width: 1230px;
+
+}
+
 /* banner 结束 */
 /* content 开始 */
 .content {
     padding-top: 24px;
-    height: 1000px;
-    background-color: #1eeeee;
+    height: 2000px;
+    background-color: #f5f5f5;
 }
 
-.content .wrapper {
+.content .brand-wall {
     display: flex;
-    justify-content: space-around
+    justify-content: space-between;
 }
 
 .brandwall {
@@ -571,13 +592,104 @@ width: 73px;
     height: 370px;
     float: left;
     background-color: #eeeeee;
+    position: relative;
+}
+
+.brandwall-title {
+    height: 54px;
+    background-color: #fff;
+    /* font-size: 14px; */
+    font-weight: 700;
+    color: #333;
+    padding: 0 10px;
+
+}
+
+.brandwall-title a {
+    color: #000;
+}
+
+.brandwall-title a span {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+
+}
+
+.brandwall .brandwall-title a span {
+    margin-left: 40px;
+}
+
+.brandwall .brandwall-body img {
+    width: 234px;
+    height: 316px;
+}
+
+.brandwall-title>span:nth-child(1) {
+    font-size: 18px;
+}
+
+.brandwall .brandwall-body-mask {
+    opacity: 0;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 234px;
+    height: 316px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.brandwall .brandwall-body-mask:hover {
+    opacity: 1;
+    transition: all .1s ease-out;
 }
 
 .brandwall2 {
+    position: relative;
     width: 485px;
     height: 370px;
     float: left;
     background-color: #eeeeee;
+}
+
+.brandwall2 .brandwall-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandwall2 .brandwall-title>div span:nth-child(1) {
+    font-size: 18px;
+}
+
+.brandwall2 .brandwall-title div {
+    margin-top: 10px;
+}
+
+.brandwall2 .brandwall-title a {
+    margin-right: 0;
+}
+
+.brandwall2 .brandwall-body img {
+    width: 485px;
+    height: 316px;
+}
+
+.brandwall2 .brandwall-body-mask {
+    opacity: 0;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 485px;
+    height: 316px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.brandwall2 .brandwall-body-mask:hover {
+    opacity: 1;
+    transition: all .1s ease-out;
 }
 
 .brandwall3 {
@@ -585,4 +697,240 @@ width: 73px;
     height: 370px;
     float: left;
     background-color: #eeeeee;
+}
+
+
+/* 品牌列表开始 */
+.brand-list {
+    height: 327px;
+    background-color: #eee;
+    margin-top: 15px;
+}
+
+.brand-list ul {
+    overflow: hidden;
+}
+
+.brand-list ul li {
+    position: relative;
+    width: 122px;
+    height: 108px;
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    background-color: #fff;
+}
+
+.brand-img {
+    width: 122px;
+    height: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brand-img img {
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+
+.brand-mask {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-mask>div {
+    margin-top: 30px;
+}
+
+.brand-enter {
+    text-align: center;
+    display: block;
+    color: #fff;
+    width: 63px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #FF0036;
+    border-radius: 9px;
+    margin-top: 10px;
+}
+
+.brand-mask:hover {
+    /* opacity 透明度 1为不透明 0为全透明 */
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+
+/* 品牌列表结束 */
+/* 天猫超市开始 */
+.tmall-market {
+
+    margin-top: 20px;
+}
+
+.tmall-market .tmarket-title {
+    overflow: hidden;
+}
+
+.tmall-market .tmarket-title img {
+    display: block;
+    float: left;
+    width: 214px;
+}
+
+.tmall-market .tmarket-title ul {
+    float: right;
+    height: 31px;
+
+}
+
+.tmall-market .tmarket-title ul li {
+    float: left;
+    
+
+
+}
+
+.tmall-market .tmarket-title ul li a {
+    font-size: 14px;
+    margin: 5px 10px;
+    color: #000;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.tmall-market .tmarket-title ul li a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.tmarket-body {
+    margin-top: 5px;
+    position: relative;
+}
+
+.tmarket-body .big-banner {
+    position: relative;
+    height: 618px;
+    float: left;
+}
+
+.big-banner img {
+
+    display: block;
+    width: 235px;
+}
+
+.big-banner .bigbanner-detaile {
+    z-index: 6;
+    position: absolute;
+    bottom: 20%;
+    /* height: 218px; */
+}
+
+.bigbanner-detaile-left {
+    height: 54px;
+    width: 41px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5px 23px;
+}
+
+.bigbanner-detaile-right {
+    width: 97px;
+    height: 58px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px 17px;
+}
+
+.bigbanner-detaile-left,
+.bigbanner-detaile-right {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+}
+
+.tmarket-body .big-banner-mask {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 235px;
+    height: 618px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tmarket-body .big-banner-mask:hover {
+    opacity: 1;
+}
+
+.banner-colume {
+    width: 995px;
+    float: left;
+}
+
+.banner-colume .two-grid {
+    width: 484px;
+    height: 301px;
+    margin-left: 13px;
+    /* border-bottom: 14px solid #f5f5f5; */
+    background-color: #fff;
+    float: left;
+}
+
+.banner-colume a{
+    float: left;
+    width: 235px;
+    height: 301px;
+    border-bottom: 15px solid #f5f5f5;
+    margin-left: 13px;
+}
+.banner-colume a div {
+    width: 235px;
+    height: 301px;
+    background-color: #fff;
+}
+
+.banner-colume a img {
+    opacity: 1;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+
+.banner-colume a p {
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+}
+
+.banner-colume a .price-color {
+    text-align: center;
+    height: 18px;
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 10px auto;
+}
+
+
+.banner-colume a div:hover{
+    border: 1px solid #ff0036;
+}
+.banner-colume a :hover img{
+    opacity: 0.6;
 }
