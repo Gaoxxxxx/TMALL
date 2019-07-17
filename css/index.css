@@ -251,6 +251,7 @@ h2 {
 .hot-list li,
 .market-list li,
 .help-list li {
+
     display: block;
     float: left;
     line-height: 1.4;
@@ -262,8 +263,17 @@ h2 {
 .guid-menu-market a,
 .guid-menu-help a {
     color: #666;
+    position: relative;
 }
 
+.icon1 {
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    top: -6px;
+    right: -10px;
+
+}
 
 /* 搜索栏开始 */
 #header-search {
@@ -272,9 +282,10 @@ h2 {
 }
 
 .header-search-logo {
+    display: block;
     width: 240px;
     height: 130px;
-    margin: 1px 0px 1px 0px;
+    margin-left: -20px;
     float: left;
 
 }
@@ -343,43 +354,235 @@ h2 {
     padding: 0 12px;
 }
 
-/* nav 开始  */
+/* main-nav 开始  */
+.main-nav {
+    border-bottom: solid 1.5px #ff0036;
+}
+
 .nav {
     margin-left: 200px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.nav li {
-    float: left;
-}
 
-.nav li img {
+.main-nav img {
     width: 100px;
     height: 30px;
     margin-top: 3px;
 }
 
-.nav a {
+.main-nav a {
     color: #333;
     font-size: 16px;
     font-weight: 500;
-    display: block;
+    /* display: block; */
     height: 35px;
     line-height: 35px;
     padding: 0 8px;
 }
 
-.nav a:hover {
+.mian-nav a:hover {
     color: #ff0036;
-
 }
 
 /* nav结束 */
+/* category开始 */
+.category {
+    position: absolute;
+    margin-top: -36px;
+    width: 200px;
+    height: 536px;
+    border: none;
+}
+
+.category .category-top {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 36px;
+    background-color: #ff0036;
+    font-size: 16px;
+    color: white;
+}
+
+.category .category-top p {
+    float: left;
+    font-weight: 700;
+    font-family: "Microsoft YaHei", SimSun, '\5b8b\4f53', sans-serif;
+}
+
+.category .category-top i {
+    margin: 2px 4px 0 14px;
+    float: left;
+}
+
+.category .category-detail {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.category .category-detail li {
+    height: 31.2px;
+    line-height: 31.2px;
+    display: block;
+    color: #fff;
+}
+
+.category .category-detail li a {
+
+    color: #fff;
+}
+
+.category .category-detail li i {
+
+    margin: 0 4px 0 14px;
+}
+
+.category .category-detail li:nth-child(1):hover .category-content {
+    display: block;
+}
+
+.category .category-detail li:nth-child(1):hover {
+    color: #e54077 !important;
+    background-color: #fff;
+}
+
+.category .category-detail li:nth-child(1):hover a {
+    color: #e54077;
+}
+
+.category .category-detail li:nth-child(2):hover .category-content {
+    display: block;
+}
+
+.category .category-detail li:nth-child(2):hover {
+    color: #427def !important;
+    background-color: #fff;
+}
+
+.category .category-detail li:nth-child(2):hover a {
+    color: #427def;
+}
+
+.category-content {
+    position: absolute;
+    top: 36px;
+    display: none;
+    margin-left: 200px;
+    width: 852px;
+    height: 500px;
+    background-color: #fafafa;
+    color: #000;
+}
+
+.category-content .hot-word-con {
+    float: left;
+    width: 583px;
+    height: 462px;
+    padding: 19px 30px;
+    background-color: #fff;
+}
+
+
+
+.hot-word-con .hot-word-line .line-title {
+
+    float: left;
+    font-family: "Microsoft YaHei", SimSun, '\5b8b\4f53', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.hot-word-con .hot-word-line .line-con {
+    color: #666 !important;
+    float: left;
+    font: 14px/1.5 tahoma, arial, "\5b8b\4f53";
+}
+
+.hot-word-con .hot-word-line .line-con-con {
+    width: 493px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.hot-word-con .hot-word-line .sperate {
+    border-bottom: 1px dashed rgba(0 ,0 ,0, 0.1);
+    height: 10.5px;
+    margin-bottom: 10.5px;
+}
+
+.hot-word-con .hot-word-line a {
+    display: inline-block;
+    margin-left: 13px;
+}
+.category-content .hot-logo-con {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 189px;
+    padding: 10px;
+    float: left;
+   
+}
+.category-content .hot-logo-con .hot-logo-con-img{
+    display: block;
+    padding: 5px 10px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    width: 73px;
+    height: 37px;
+    background-color: #fff;
+}
+.category-content .hot-logo-con .hot-logo-con-img img{
+width: 73px;
+}
 /* banner开始 */
 .banner {
     height: 500px;
-    background-color: #333;
+    background-color: #eee;
 }
 
-.banner-img {
-    background: url();
+.banner .wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .banner .wrapper img {
+   display: block;
+} */
+/* banner 结束 */
+/* content 开始 */
+.content {
+    padding-top: 24px;
+    height: 1000px;
+    background-color: #1eeeee;
+}
+
+.content .wrapper {
+    display: flex;
+    justify-content: space-around
+}
+
+.brandwall {
+    width: 234px;
+    height: 370px;
+    float: left;
+    background-color: #eeeeee;
+}
+
+.brandwall2 {
+    width: 485px;
+    height: 370px;
+    float: left;
+    background-color: #eeeeee;
+}
+
+.brandwall3 {
+    width: 485px;
+    height: 370px;
+    float: left;
+    background-color: #eeeeee;
 }
