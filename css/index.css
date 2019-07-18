@@ -279,6 +279,7 @@ h2 {
 #header-search {
     height: 130px;
     padding-left: 0;
+    background-color: #fff;
 }
 
 .header-search-logo {
@@ -357,6 +358,7 @@ h2 {
 /* main-nav 开始  */
 .main-nav {
     border-bottom: solid 1.5px #ff0036;
+    background-color: #fff;
 }
 
 .nav {
@@ -578,8 +580,8 @@ h2 {
 /* content 开始 */
 .content {
     padding-top: 24px;
-    height: 4600px;
-    background-color: #f5f5f5;
+    /* height: 4600px; */
+   
 }
 
 .content .brand-wall {
@@ -857,7 +859,22 @@ h2 {
     font-size: 18px;
     color: #fff;
 }
+.tmarket-body .detail-warp{
+    background-image: linear-gradient(-180deg,rgba(0,0,0,0) 4%,rgba(0,0,0,.36) 100%);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
+}
+.tmarket-body .detail-warp img{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+}
 .tmarket-body .big-banner-mask {
     opacity: 0;
     position: absolute;
@@ -870,7 +887,70 @@ h2 {
 .tmarket-body .big-banner-mask:hover {
     opacity: 1;
 }
-
+.tmarket-body .small-banner{
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #fff;
+}
+.tmarket-body .small-banner:hover img{
+    opacity: 0.7;
+    
+}
+.tmarket-body .small-banner img{
+    width: 235px;
+    height: 301px;
+    
+}
+.small-banner .smallbanner-detail{
+    position: absolute;
+    bottom: 20%;
+}
+.small-banner .smallbanner-detail .smallbanner-detaile-left{
+    background: rgba(0,0,0,.9);
+    width: 70px;
+    height: 64px;
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.smallbanner-detaile-left span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 18px;
+    width: 36px;
+}
+.small-banner .smallbanner-detail .smallbanner-detaile-right{
+    left: 70px;
+    top: 0;
+    position: absolute;
+    background: rgba(0,0,0,.6);
+    overflow: hidden;
+    width: 128px;
+    height: 64px;
+    color: #FFF;
+    vertical-align: middle;
+}
+.smallbanner-detaile-right span{
+    display: block;
+    line-height: 24px;
+    font-size: 18px;
+    margin: 8px 0 0 14px;
+}
+.small-banner .detail-warp{
+    background-image: linear-gradient(-180deg,rgba(0,0,0,0) 4%,rgba(0,0,0,.36) 100%);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.small-banner .detail-warp img{
+    width: 32px;
+    height: 32px;
+}
 .banner-colume {
     width: 995px;
     float: left;
@@ -1028,8 +1108,13 @@ h2 {
 }
 
 .con-end {
+    background: url(../image/end.png);
+    text-align: center;
+    width: 80px;
     height: 45px;
-    background-color: #fff;
+    margin: 0 auto 10px;
+    background-size: cover;
+    z-index: 9;
 }
 
 /* content 结束 */
@@ -1042,6 +1127,7 @@ h2 {
     text-align: center;
     /* background-color:rgba(0, 0, 0, 0.1); */
     position: relative;
+    background-color: #fff;
 }
 
 .tmall-ensure {
@@ -1103,8 +1189,9 @@ h2 {
     border-top: 2px solid #FF0036;
     background: #000;
     text-align: left;
-    min-height: 177px;
-    height: 218px;
+    /* min-height: 177px;
+    height: 218px; */
+    
 }
 .tamll-copyright .footer-tmallinfo a,.tamll-copyright .other-link a{
     font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
@@ -1112,7 +1199,7 @@ h2 {
     color: #fff;
 }
 .tamll-copyright .other-link,.tamll-copyright .footer-tmallinfo{
-    padding: 5px 0;
+    padding: 11px 0;
     color: #ffffff;
 }
 .footer-copyright{
@@ -1130,4 +1217,8 @@ h2 {
     width: 20px;
     height: 20px;
     vertical-align: middle;
+}
+.server-num{
+    height: 16px;
+    background-color: #000000;
 }
