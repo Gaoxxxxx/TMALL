@@ -578,7 +578,7 @@ h2 {
 /* content 开始 */
 .content {
     padding-top: 24px;
-    height: 2000px;
+    height: 4600px;
     background-color: #f5f5f5;
 }
 
@@ -777,7 +777,7 @@ h2 {
 /* 品牌列表结束 */
 /* 天猫超市开始 */
 .tmall-market {
-
+    overflow: hidden;
     margin-top: 20px;
 }
 
@@ -799,9 +799,6 @@ h2 {
 
 .tmall-market .tmarket-title ul li {
     float: left;
-    
-
-
 }
 
 .tmall-market .tmarket-title ul li a {
@@ -830,6 +827,7 @@ h2 {
 
     display: block;
     width: 235px;
+    height: 618px;
 }
 
 .big-banner .bigbanner-detaile {
@@ -887,13 +885,14 @@ h2 {
     float: left;
 }
 
-.banner-colume a{
+.banner-colume a {
     float: left;
     width: 235px;
     height: 301px;
     border-bottom: 15px solid #f5f5f5;
     margin-left: 13px;
 }
+
 .banner-colume a div {
     width: 235px;
     height: 301px;
@@ -928,9 +927,207 @@ h2 {
 }
 
 
-.banner-colume a div:hover{
+.banner-colume a div:hover {
     border: 1px solid #ff0036;
 }
-.banner-colume a :hover img{
+
+.banner-colume a :hover img {
     opacity: 0.6;
+}
+
+.color-mark {
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    background-color: #000;
+
+}
+
+.color-mark~span {
+    margin-left: 10px;
+}
+
+.color-mark+span {
+    font-size: 18px;
+}
+
+.color-mark+span+span {
+    font-size: 14px;
+}
+
+/* 猜你喜欢 */
+.you-like .you-like-con {
+    overflow: hidden;
+}
+
+.you-like .you-like-con a {
+    width: 235px;
+    height: 315px;
+    background-color: #fff;
+    margin-right: 13px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.you-like .you-like-con a div {
+
+
+    width: 235px;
+    height: 315px;
+    background-color: #fff;
+}
+
+.you-like .you-like-con img {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+
+.you-like .you-like-con p {
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.you-like .you-like-con .price-color {
+    color: #ff0036;
+    font-size: 18px;
+}
+
+.you-like .you-like-con .last {
+    margin-right: 0px;
+}
+
+.you-like .you-like-con div:hover {
+    border: 1px solid #ff0036;
+}
+
+.you-like .you-like-con div:hover img {
+    opacity: 0.7;
+}
+
+.you-like .you-like-title {
+    height: 43px;
+    text-align: center;
+}
+
+.you-like .you-like-title p {
+    color: #666666;
+    font-size: 18px;
+}
+
+.you-like .you-like-title p span {
+    font-size: 20px;
+    color: #FF0036;
+}
+
+.con-end {
+    height: 45px;
+    background-color: #fff;
+}
+
+/* content 结束 */
+/* footer 开始 */
+.footer {
+    min-height: 558px;
+    border-top: 1px solid #D1D7DC;
+    clear: both;
+    margin: 0;
+    text-align: center;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    position: relative;
+}
+
+.tmall-ensure {
+    z-index: 55;
+    width: 1190px;
+    height: 100px;
+    margin: 25px auto;
+    padding: 0;
+    background: url(../image/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
+    
+}
+.tmall-ensure a{
+    float: left;
+    display: block;
+    width: 297px;
+    height: 100px;
+    text-indent: -1000em;
+}
+.tmall-desc{
+    border-top: 1px solid #D1D7DC;
+    clear: both;
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    height: 190px;
+    padding-top: 22px;
+    background: url(../image/下载.jpg) 45px bottom no-repeat;
+}
+.tmall-desc dl{
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    float: left;
+    padding-left: 52px;
+    width: 186px;
+    text-align: left;
+}
+.tmall-desc dl dt{
+    color: #646464;
+    font-size: 16px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+.tmall-desc dl a{
+    width: 100px;
+    overflow: hidden;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    color: #8b8b8b;
+}
+
+.tmall-desc dl img{
+    width: 105px;
+    height: 105px;
+}
+.tamll-copyright{
+    border-top: 2px solid #FF0036;
+    background: #000;
+    text-align: left;
+    min-height: 177px;
+    height: 218px;
+}
+.tamll-copyright .footer-tmallinfo a,.tamll-copyright .other-link a{
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    margin-right: 3px;
+    color: #fff;
+}
+.tamll-copyright .other-link,.tamll-copyright .footer-tmallinfo{
+    padding: 5px 0;
+    color: #ffffff;
+}
+.footer-copyright{
+    line-height: 20px;
+    background: #000;
+    color: #a4a4a4;
+}
+.footer-copyright a{
+    color: #a4a4a4;
+}
+.footer-copyright span{
+    margin-right: 65px;
+}
+.footer-copyright>a img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
